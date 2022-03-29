@@ -12,7 +12,7 @@ db.once('open', () => console.log(`Connected to DB`));
 //setup JSON acceptance from server:
 app.use(express.json());
 
-const subscribersRouter = require('./routes/subscribers');
-app.use('/subscribers', subscribersRouter); //'localhost:3000/subscribers/{id} <-- will go into subscribersRouter
+const usersRouter = require('./routes/users');
+app.use('/users', usersRouter); //'localhost:3000/users/{id} <-- will go into usersRouter
 
 app.listen(3000, () => console.log(`Server is running`));

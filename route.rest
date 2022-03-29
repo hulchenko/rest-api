@@ -1,5 +1,30 @@
-GET http://localhost:3000/subscribers
+GET http://localhost:3000/users
 
 ###
 
-GET http://localhost:3000/subscribers/26
+GET http://localhost:3000/users/624394560364d07b23a81cc9
+
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Vadym",
+    "lovesDogs": true
+}
+
+###
+
+DELETE http://localhost:3000/users/62439a5a082ac3df5bcd5377
+
+###
+
+PATCH http://localhost:3000/users/62439a5a082ac3df5bcd5377
+Content-Type: application/json
+
+{
+    "name": "Alissa",
+    "lovesDogs": true
+}
